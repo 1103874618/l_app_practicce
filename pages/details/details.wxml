@@ -1,0 +1,8 @@
+<view class="warp">
+  <view class='title'>{{info.title}}</view>
+  <view class='c_time'>{{info.c_time}}</view>
+  <view class='imgs'>
+    <image src='{{info.img}}' class='in_img' background-size="cover" model="scaleToFill"></image>
+  </view>
+  <view class='content'>{{info.content}}</view>
+</view>

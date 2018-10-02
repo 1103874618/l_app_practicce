@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/lists/lists",
+    "pages/details/details",
+    "pages/aboutme/aboutme",
+    "pages/index/index",
+    "pages/logs/logs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"blod",
+    "navigationBarBackgroundColor": "#3635ad",
+    "navigationBarTitleText": "fuck you",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/lists/lists",
+        "text": "首页"
+        
+        
+      },
+
+      {
+        "pagePath": "pages/aboutme/aboutme",
+        "text": "关于我们"
+      }
+    ],
+    "borderStyle" : "black",
+    "backgroundColor": "white",
+    "color": "grey"
+    
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+  
+}

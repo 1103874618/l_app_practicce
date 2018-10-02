@@ -1,0 +1,16 @@
+<!--aboutme.wxml-->
+
+<view class="about" >
+  <view class='about_wei'>
+    <view ><image class='about_img' bindtap="bindViewTap"  src = "{{img}}"     mode = "cover" >            </image></view>
+  </view>
+
+  <view class='about_tittle'> {{tittle}} </view>
+  <view class='about_intr'>{{intro}}</view>
+<view class='about_body'>
+  <view class='about_contab'> {{contab}} </view>
+  <view class='about_addr'> 地址: {{adress}} </view>
+  <view class='about_mob'> 地址:{{mobile}} </view>
+  <view class='about_ema'> 地址:{{email}} </view>
+</view>
+</view>

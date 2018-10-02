@@ -1,0 +1,39 @@
+.about{}
+
+.about_wei{
+  text-align: center;
+}
+.about_img{
+  display: block;
+  width: 124px;
+  height: 110px;
+  margin: 20px auto 0;
+
+}
+.about_tittle{
+  display: flex; /*必须有，不然没有效果 */
+  justify-content: center; 
+  align-items: center;
+  
+  margin: 20px 0;
+}
+
+.about_addr,.about_mob,.about_ema{
+  text-indent: 2em;
+  font-size: 16px;
+  line-height: 2;
+}
+.about_intr{
+  
+  display: block;
+  text-indent: 2em;
+  
+  font-size: 16px;
+  margin: 0 24px;
+  line-height: 1.5;
+}
+.about_body{
+  font-size: 16px;
+  display: block;
+  margin:  10px 20px;
+}

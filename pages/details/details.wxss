@@ -1,0 +1,29 @@
+.warp{
+  height: 100%;
+  display: flex;
+  flex-direction:  column;
+  padding: 20rpx;
+}
+.title{
+  text-align: center;
+  padding: 20rxp;
+  font-size: 2rem;
+}
+.c_time{
+  color: #aaa;
+  font-size: 0.7em;
+}
+.imgs{
+  text-align: center;
+  padding: 20rpx;
+}
+.imgs image{
+  width: 10rem;
+  height: 10rem;
+}
+.content{
+  text-indent: 2em;
+  padding: 1em;
+  text-align: justify;
+  font-size: 0.875em;
+}

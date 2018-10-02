@@ -1,0 +1,36 @@
+<!--aboutme.wxml-->
+
+<button type='default' hover-class='other-button-hover' class='botton_1'>default</button>
+<button type='primary' bindtap='btn_click'>primary</button>
+
+<view wx:if="{{show}}">{{x_text}}</view>
+<view wx:else>{{text}}</view>
+<view wx:for="{{li}}" wx:for-item = "li_son">
+ {{index}} ---{{li_son}}
+</view>
+
+
+<view class="warp">
+  <!-- 文章列表模板 -->
+  <template name="items">
+    <navigator url='../../pages/details/details?id={{id}}'>
+      <view class='imgs'>
+        <image src='{{img}}' class='in_img' background-size="cover" mode='scaleToFill'></image>
+      </view>
+      <view class='infos'>
+        <view class='title'>{{title}}</view>
+        <view class='date'>{{c_time}}</view>
+      </view>
+    </navigator>
+  </template>
+
+  <!--循环输出列表  beg-->
+  <!-- fot里面的是data里面要用到的数据名称 -->
+  <!--定义数据循环 -->
+  <view wx:for="{{news_lists}}" class="list">
+
+    <template is="items" data="{{...item}}">
+    </template>
+  </view>
+  <!--循环输出列表  end-->
+</view>
