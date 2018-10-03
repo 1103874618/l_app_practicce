@@ -4,7 +4,8 @@ const app = getApp()
 
 Page({
   data: {
-    
+    artical_id:null,
+    title : null,
   },
 
 
@@ -14,7 +15,12 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function() {
+  onLoad: function(options) {
+    console.log(options);
+    this.setData({artical_id:options.id});
+    this.setData({title:options.title});
+    console.log(this.data.artical_id);
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

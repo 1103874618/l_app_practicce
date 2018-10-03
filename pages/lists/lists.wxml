@@ -1,11 +1,32 @@
 <!--aboutme.wxml-->
 
+<view>
+
+<navigator url ="../index/index?id=10&title=标题" redirect>
+  <view  class='li_block' >
+    文章1
+  </view >
+</navigator>
+
+  <view class='li_block' bindtap='art_click'>
+    文章2
+  </view>
+
+  <view class='li_block' bindtap='art_click'>
+    文章3
+  </view>
+
+
+</view>
+
+
+
 <!-- 冒泡事件实现 -->
-<view class='view1' bindtap='view1_click' id='view1' data-title  ="ccnaiom " data-id ="诶额哦">
+<view class='view1' bindtap='view1_click' id='view1' data-title="ccnaiom " data-id="诶额哦">
   爷爷
   <view class='view2' bindtap='view2_click' id='view2'>
     爸爸
-    <view class='view3' bindtap='view3_click' id='view3'> 
+    <view class='view3' bindtap='view3_click' id='view3'>
       儿子
     </view>
   </view>

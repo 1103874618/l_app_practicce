@@ -19,15 +19,19 @@
       {
         "pagePath": "pages/lists/lists",
         "text": "首页"
-        
-        
       },
 
       {
         "pagePath": "pages/aboutme/aboutme",
         "text": "关于我们"
+      },
+
+      {
+        "pagePath":"pages/logs/logs",
+        "text":"详情"
       }
     ],
+    
     "borderStyle" : "black",
     "backgroundColor": "white",
     "color": "grey"

@@ -49,6 +49,16 @@ Page({
     console.log("is_show: "+ is_show);
   },
 
+  art_click : function () {
+    wx.navigateTo({
+      url: '../index/index?id=1',
+    })
+
+    // wx.redirectTo({
+    //   url: '../login/login',
+    // })
+  },
+
   view1_click:function(event){
     console.log("爷爷死了");
     console.log(event);

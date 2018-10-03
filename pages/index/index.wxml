@@ -1,5 +1,9 @@
 <!--index.wxml-->
 <view class="warp">
+当前文章id是{{artical_id}}
+</view>
 
 
-  </view>
+<view>
+当前文章的标题为{{title}}
+</view>
