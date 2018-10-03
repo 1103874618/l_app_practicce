@@ -61,7 +61,7 @@ Page({
     console.log("儿子死了");
     console.log(event);
   },
-
+ 
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
@@ -69,6 +69,9 @@ Page({
     })
   },
   onLoad: function() {
+      console.log(app.mydata.username);
+
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
