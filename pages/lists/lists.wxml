@@ -1,18 +1,35 @@
 <!--aboutme.wxml-->
-<include src="../../pages/template/header.wxml"/>
 
-<import src = "../../pages/template/footer" />
-<template is = "footer1" data = "{{foot_text:'去哦谁'}}"/>
+<!-- 冒泡事件实现 -->
+<view class='view1' bindtap='view1_click' id='view1' data-title  ="ccnaiom " data-id ="诶额哦">
+  爷爷
+  <view class='view2' bindtap='view2_click' id='view2'>
+    爸爸
+    <view class='view3' bindtap='view3_click' id='view3'> 
+      儿子
+    </view>
+  </view>
+</view>
+<!-- end -->
 
-<template is = "footer2"/>
+
+<!-- 组件化引入 -->
+<include src="../../pages/template/header.wxml" />
+
+<import src="../../pages/template/footer" />
+<template is="footer1" data="{{foot_text:'去哦谁'}}" />
+
+<template is="footer2" />
 
 <button type='default' hover-class='other-button-hover' class='botton_1'>default</button>
 <button type='primary' bindtap='btn_click'>primary</button>
+<!-- end -->
+
 
 <view wx:if="{{show}}">{{x_text}}</view>
 <view wx:else>{{text}}</view>
-<view wx:for="{{li}}" wx:for-item = "li_son" wx:for-index = "li_ix">
- {{li_ix}} ---{{li_son}}
+<view wx:for="{{li}}" wx:for-item="li_son" wx:for-index="li_ix">
+  {{li_ix}} ---{{li_son}}
 </view>
 
 

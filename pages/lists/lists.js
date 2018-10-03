@@ -49,6 +49,19 @@ Page({
     console.log("is_show: "+ is_show);
   },
 
+  view1_click:function(event){
+    console.log("爷爷死了");
+    console.log(event);
+  },
+  view2_click: function (event) {
+    console.log("爸爸死了");
+    console.log(event);
+  },
+  view3_click: function (event) {
+    console.log("儿子死了");
+    console.log(event);
+  },
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({

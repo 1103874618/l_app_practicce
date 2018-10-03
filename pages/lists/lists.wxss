@@ -43,4 +43,20 @@ navigator{
 }
 button{
   border-radius: 10px;
+} 
+.view1{
+  height: 500rpx;
+  width: 100%;
+  background: purple;
 }
+.view2{
+  height: 400rpx;
+  width: 80%;
+  background: yellow;
+}
+.view3{
+  height: 300rpx;
+  width: 60%;
+  background: red;
+}
+
