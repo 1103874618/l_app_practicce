@@ -1,0 +1,15 @@
+<template name = "footer1">
+  这是底部1 -- {{foot_text}}
+</template>
+
+<template name = "footer2">
+  这是底部2
+</template>
+
+<template name = "footer3">
+  这是底部3
+</template>
+
+<template name = "footer4" >
+  这是底部4
+</template>
