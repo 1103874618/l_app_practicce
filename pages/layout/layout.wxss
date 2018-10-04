@@ -1,0 +1,47 @@
+/* pages/layout/layout.wxss */
+page{
+  position: absolute;
+  height: 100%;
+  padding: 0;
+}
+.container {
+  display: flex;
+  height:100%;
+  width: 100%;
+  background: purple; 
+  justify-content: flex-start;
+  
+  padding: 0;
+ 
+}
+.item{
+  
+  top: 0;
+
+  /* flex-shrink: 1;每个都是1,所以等比缩小,如果有一个元素被设置为0,则他会保持原来的大小,若有一个被设置成10,他反而会被压缩成其他元素的十分之一 */
+  
+  height: 100rpx;
+  width: 100rpx;
+  background: red;
+  border: 1px solid white;
+  flex-grow: 1;
+}
+/* .item:nth-child(2){
+  flex-basis: 200rpx;//用来单独设置某个元素在主轴上所占空间的份数
+  flex-grow: 2;/* 代表其占得空间份数 */
+  /* order:3;规定某个元素 的权值,按权值排列元素*/
+/* } */ 
+.item_box{
+  height:100%;
+  width: 100%;
+  display: flex;
+  /* flex-direction: row;  此时横向为主轴,若改为clonum,则纵向会变为主轴 */
+  align-items: flex-start;/* 在交叉轴上的对齐方式 */
+  justify-content: space-between;/* 元素在主轴上的对齐方式 */
+  /* flex-wrap: wrap-reverse; */
+  
+  flex-flow: row;/* 简写 */
+
+  
+  position: absolute;
+}

@@ -1,0 +1,40 @@
+<!--pages/layout/layout.wxml-->
+
+<!-- 组件 -->
+<view class='container'>
+  <view class='item_box'>
+    <view class='item'>
+      1
+    </view>
+
+    <view class='item'>
+      2
+    </view>
+
+    <view class='item'>
+      3
+    </view>
+
+    <view class='item'>
+      4 
+    </view>
+
+      <view class='item'>
+      1
+    </view>
+
+    <view class='item'>
+      2
+    </view>
+
+    <view class='item'>
+      3
+    </view>
+
+    <view class='item'>
+      4 
+    </view>
+
+  </view>
+</view>
+<!-- end -->
