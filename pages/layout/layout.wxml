@@ -19,7 +19,7 @@
       4 
     </view>
 
-      <view class='item'>
+    <view class='item'>
       1
     </view>
 
@@ -38,3 +38,15 @@
   </view>
 </view>
 <!-- end -->
+
+<swiper indicator-dots="ture"
+  autoplay="ture" interval="3000" duration="1000">
+
+<block  wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+</block>
+
+  
+</swiper>

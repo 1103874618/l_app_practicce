@@ -1,0 +1,62 @@
+<!--pages/first/first.wxml-->
+<view class='container'>
+  <swiper indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}">
+    <block wx:for="{{swiper.imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class='container'>
+
+  <view class='selection'>
+    <view class='header'>
+      <text>精品推荐</text>
+      <text class='header_rf'>全部精品</text>
+    </view>
+
+    <view class='shop_content'>
+      <!-- 这里演示了如何循环显示重复div -->
+      <view class='content_items' wx:for="{{content_items}}">
+
+        <image src='https://source.unsplash.com/random' mode='aspectFill'></image>
+        <view class='item_text'>
+          <text>veuiyige</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class='selection'>
+    <view class='header'>
+      <text>热门评测</text>
+      <text class='header_rf'>全部评测</text>
+    </view>
+
+    <view class='test_item' wx:for="{{test_item}}">
+      <view class='test_item_images'>
+        <image src='https://source.unsplash.com/random' mode='aspectFill'></image>
+      </view>
+      <image src='https://source.unsplash.com/random/month' mode='aspectFill' class='user_ico'></image>
+
+      <view class='test_item_text'>
+        <view class='test_item_text_title'>
+          <text>魅蓝手机</text>
+        </view>
+        <view class='test_item_text_content'>
+          <text>kdaslfjsdkjfksdjfd这里是内容,这里是内容,这里是内容,这里是内容,这里是内容</text>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+
+</view>
+
+<view class='container'>
+
+</view>
